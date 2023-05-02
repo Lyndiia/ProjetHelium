@@ -1,0 +1,159 @@
+@font-face {
+    font-family: inter;
+    src: url(./font/Inter-ExtraLight.ttf);
+}
+@font-face {
+    font-family: interbold;
+    src: url(./font/Inter-SemiBold.ttf);
+}
+
+* {
+    font-family: "inter", Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+body {
+    background: rgb(49, 48, 48);
+    min-height: 100vh;
+    color: rgb(239, 234, 234);
+    cursor: none;
+}
+.mouse {
+    position: absolute;
+    border-radius: 1500px;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+}
+#mousemove {
+    height: 15px;
+    width: 15px;
+    background: #2128bd;    
+
+}
+
+#mousecw {
+    width: 100px;
+    height: 100px;
+    background: rgba(245, 245, 245);
+    transition: 0.2s ease;
+
+}
+
+#mousecb {
+    width: 200px;
+    height: 200px;
+    background: rgba(36, 36, 36);
+    transition: 0.3s ease;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 10px 20px;
+
+}
+
+h2 {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.2rem;
+    margin: 20px;
+    font: bold;
+    width: 30%;
+}
+
+nav ul {
+   display: grid;
+   grid-template-columns: 33% 33% 33% ;
+   z-index: 10;
+}
+nav a,
+nav a:visited {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+nav a:hover {
+    font-size: 1.3rem;
+    color: #2128bd;
+    font-weight: bold;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 30px auto;
+}
+
+
+.header-left h1 {
+    font-size: 5rem;
+    font-family: "interbold", Arial, Helvetica, sans-serif;
+}
+
+.header-left h3 {
+    color: rgb(52, 103, 255);
+    font-size: 1.8rem;
+    font-family: "interbold", Arial, Helvetica, sans-serif;
+}
+
+.header-right {
+    width: 50%;
+    
+}
+
+#Modem {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.infos {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background: rgb(24, 24, 24);
+    border-radius: 10px;
+}
+
+button {
+    background: rgb(20, 20, 241);
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    width: 130px;
+    padding: 10px 0;
+    border: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 5px;
+}
+
+.infos-right {
+    width: 67%;    
+}
+.investors {
+   display: grid;
+   align-items: center;
+   height: 80%;
+}
+
+.img-container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.img-container img {
+    height: 60px;
+}
+
